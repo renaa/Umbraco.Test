@@ -17,8 +17,8 @@ using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 using Umbraco.ModelsBuilder.Embedded;
 
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "8c754970c4c4f3e3")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "862ae1584b2c7814")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.4")]
 
 namespace Umbraco.Web.PublishedModels
 {
@@ -684,11 +684,18 @@ namespace Umbraco.Web.PublishedModels
 		public global::Newtonsoft.Json.Linq.JToken GridL => this.Value<global::Newtonsoft.Json.Linq.JToken>("gridL");
 
 		///<summary>
-		/// MyDecimal: Insert number here
+		/// MyFile
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.8.0")]
-		[ImplementPropertyType("MyDecimal")]
-		public decimal MyDecimal => this.Value<decimal>("MyDecimal");
+		[ImplementPropertyType("myFile")]
+		public string MyFile => this.Value<string>("myFile");
+
+		///<summary>
+		/// MyMarkdownEditor
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.8.0")]
+		[ImplementPropertyType("myMarkdownEditor")]
+		public global::System.Web.IHtmlString MyMarkdownEditor => this.Value<global::System.Web.IHtmlString>("myMarkdownEditor");
 
 		///<summary>
 		/// Content

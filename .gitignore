@@ -343,3 +343,4 @@ Umbraco.Test/App_Data/TEMP
 Umbraco.Test/App_Plugins/OsmMaps
 Umbraco.Test/Umbraco
 .vscode
+/Umbraco.Test/App_Data/cache/

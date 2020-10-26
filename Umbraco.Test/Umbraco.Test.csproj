@@ -270,6 +270,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Plugins\MarkDownEditor\lib\Markdown.Converter.js" />
+    <Content Include="App_Plugins\MarkDownEditor\lib\Markdown.Editor.Icons.fw.png" />
+    <Content Include="App_Plugins\MarkDownEditor\lib\Markdown.Editor.Icons.png" />
+    <Content Include="App_Plugins\MarkDownEditor\lib\Markdown.Editor.js" />
+    <Content Include="App_Plugins\MarkDownEditor\lib\Markdown.Sanitizer.js" />
+    <Content Include="App_Plugins\MarkDownEditor\markdowneditor.controller.js" />
+    <Content Include="App_Plugins\MarkDownEditor\markdowneditor.html" />
+    <Content Include="App_Plugins\TextboxWithCharacterCount\TextboxWithCharacterCount.controller.js" />
+    <Content Include="App_Plugins\TextboxWithCharacterCount\TextboxWithCharacterCount.html" />
     <Content Include="config\grid.editors.config.js" />
     <Content Include="config\Lang\cs-CZ.user.xml" />
     <Content Include="config\Lang\da-DK.user.xml" />
@@ -318,6 +327,9 @@
     <Content Include="config\HealthChecks.config" />
     <Content Include="config\ClientDependency.config" />
     <Content Include="config\BackOfficeTours\getting-started.json" />
+    <Content Include="App_Plugins\MarkDownEditor\lib\Markdown.Editor.less" />
+    <Content Include="App_Plugins\MarkDownEditor\package.manifest" />
+    <Content Include="App_Plugins\TextboxWithCharacterCount\package.manifest" />
     <None Include="packages.config" />
     <Content Include="Views\Blog.cshtml" />
     <Content Include="Views\Blogpost.cshtml" />

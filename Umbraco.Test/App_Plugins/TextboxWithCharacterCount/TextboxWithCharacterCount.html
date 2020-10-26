@@ -1,0 +1,34 @@
+<div ng-controller="tfr.TextboxWithCharacterCount" id="tfr_TextboxWithCharacterCount" class="wmd-panel">
+    <input ng-model="model.value"
+           ng-change="update()"
+           class="umb-editor umb-Textbox Textbox tfr123"
+           type="text" /><br /><br />
+    <small ng-class="model.className">{{model.remainingCount}} chars remaining</small>
+
+    <div id="wmd-preview-{{model.alias}}" class="wmd-panel wmd-preview"></div>
+</div>
+
+<style>
+    #tfr123{
+        left: 180px !important;
+    }
+    #tfr_TextboxWithCharacterCount
+    .red {
+        color: red;
+    }
+
+    #tfr_TextboxWithCharacterCount
+    .yellow {
+        color: yellow;
+    }
+
+    #tfr_TextboxWithCharacterCount
+    .orange {
+        color: orange;
+    }
+
+    #tfr_TextboxWithCharacterCount
+    .green {
+        color: green;
+    }
+</style>

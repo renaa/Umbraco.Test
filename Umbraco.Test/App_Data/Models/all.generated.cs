@@ -6,8 +6,8 @@ using  Umbraco.Core.Models;
 using  Umbraco.Core.Models.PublishedContent;
 using  Umbraco.Web;
 using  Umbraco.ModelsBuilder.Embedded;
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "862ae1584b2c7814")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "8e605e9391d3cf6")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.3")]
 
 
 // FILE: models.generated.cs
@@ -698,6 +698,13 @@ namespace Umbraco.Web.PublishedModels
 		public global::Newtonsoft.Json.Linq.JToken GridL => this.Value<global::Newtonsoft.Json.Linq.JToken>("gridL");
 
 		///<summary>
+		/// MyDecimal
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.8.0")]
+		[ImplementPropertyType("myDecimal")]
+		public decimal MyDecimal => this.Value<decimal>("myDecimal");
+
+		///<summary>
 		/// MyFile
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.8.0")]
@@ -705,11 +712,18 @@ namespace Umbraco.Web.PublishedModels
 		public string MyFile => this.Value<string>("myFile");
 
 		///<summary>
-		/// MyMarkdownEditor
+		/// mymd
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.8.0")]
-		[ImplementPropertyType("myMarkdownEditor")]
-		public global::System.Web.IHtmlString MyMarkdownEditor => this.Value<global::System.Web.IHtmlString>("myMarkdownEditor");
+		[ImplementPropertyType("mymd")]
+		public object Mymd => this.Value("mymd");
+
+		///<summary>
+		/// My thing
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.8.0")]
+		[ImplementPropertyType("myThing")]
+		public object MyThing => this.Value("myThing");
 
 		///<summary>
 		/// Content

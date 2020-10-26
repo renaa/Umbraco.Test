@@ -1,0 +1,25 @@
+{ 
+	"propertyEditors": [
+		{
+			"alias": "tfr.TextboxWithCharacterCount",
+			"name": "Textbox with Character Count",
+			"editor": {
+				"view": "~/App_Plugins/TextboxWithCharacterCount/TextboxWithCharacterCount.html"
+			},
+			"group": "Rich Content",
+			"prevalues": {
+				"fields": [
+					{
+						"label": "Maximum",
+						"description": "Maximum number of characters for validation",
+						"key": "maxcount",
+						"view": "number"
+					}
+				]
+			},
+		}
+	],
+	"javascript": [
+		"~/App_Plugins/TextboxWithCharacterCount/TextboxWithCharacterCount.controller.js"
+	]
+}

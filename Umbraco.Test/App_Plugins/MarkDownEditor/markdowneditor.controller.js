@@ -2,7 +2,6 @@
     .controller("My.MarkdownEditorController",
         // inject umbracos assetsService and editor service
         function ($scope, assetsService, $timeout, editorService) {
-
             if ($scope.model.value === null || $scope.model.value === "") {
                 $scope.model.value = $scope.model.config.defaultValue;
             }

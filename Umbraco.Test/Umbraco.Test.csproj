@@ -270,6 +270,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\umbraco.sdf" />
     <Content Include="App_Plugins\MarkDownEditor\lib\Markdown.Converter.js" />
     <Content Include="App_Plugins\MarkDownEditor\lib\Markdown.Editor.Icons.fw.png" />
     <Content Include="App_Plugins\MarkDownEditor\lib\Markdown.Editor.Icons.png" />
@@ -330,6 +331,8 @@
     <Content Include="App_Plugins\MarkDownEditor\lib\Markdown.Editor.less" />
     <Content Include="App_Plugins\MarkDownEditor\package.manifest" />
     <Content Include="App_Plugins\TextboxWithCharacterCount\package.manifest" />
+    <Content Include="App_Data\packages\createdPackages.config" />
+    <Content Include="App_Data\packages\installedPackages.config" />
     <None Include="packages.config" />
     <Content Include="Views\Blog.cshtml" />
     <Content Include="Views\Blogpost.cshtml" />

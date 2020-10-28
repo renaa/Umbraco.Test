@@ -271,6 +271,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\umbraco.sdf" />
+    <Content Include="App_Plugins\BlockListDemo\EventDate.controller.js" />
+    <Content Include="App_Plugins\BlockListDemo\EventDate.css" />
+    <Content Include="App_Plugins\BlockListDemo\EventDate.html" />
     <Content Include="App_Plugins\MarkDownEditor\lib\Markdown.Converter.js" />
     <Content Include="App_Plugins\MarkDownEditor\lib\Markdown.Editor.Icons.fw.png" />
     <Content Include="App_Plugins\MarkDownEditor\lib\Markdown.Editor.Icons.png" />
@@ -301,6 +304,8 @@
     <Content Include="config\Lang\zh-CN.user.xml" />
     <Content Include="config\logviewer.searches.config.js" />
     <Content Include="Global.asax" />
+    <Content Include="pics\Annotation 2020-09-07 172831 - Copy.png" />
+    <Content Include="pics\defaultEvent.png" />
     <Content Include="Views\Partials\BlockList\Default.cshtml" />
     <Content Include="Views\Partials\Grid\Bootstrap3-Fluid.cshtml" />
     <Content Include="Views\Partials\Grid\Bootstrap3.cshtml" />
@@ -333,6 +338,7 @@
     <Content Include="App_Plugins\TextboxWithCharacterCount\package.manifest" />
     <Content Include="App_Data\packages\createdPackages.config" />
     <Content Include="App_Data\packages\installedPackages.config" />
+    <Content Include="App_Plugins\BlockListDemo\package.manifest" />
     <None Include="packages.config" />
     <Content Include="Views\Blog.cshtml" />
     <Content Include="Views\Blogpost.cshtml" />
@@ -350,12 +356,19 @@
     <Content Include="Views\Person.cshtml" />
     <Content Include="Views\Product.cshtml" />
     <Content Include="Views\Products.cshtml" />
+    <Content Include="Views\Partials\BlockList\Components\EventDate.cshtml" />
+    <Content Include="Views\Event.cshtml" />
+    <Content Include="Views\Events.cshtml" />
+    <Content Include="Views\Partials\BlockList\Components\Sessions.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

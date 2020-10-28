@@ -1,0 +1,42 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Event>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+    Layout = "master.cshtml";
+    var url = Model?.Image?.Url ?? "/pics/defaultEvent.png";
+}
+@Html.Partial("~/Views/Partials/SectionHeader.cshtml")
+
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="product-image-container">
+                    <img class="product-image" src="@url" />
+                </div>
+
+                @*@foreach (var blockItem in Model.Dates)
+                {
+
+                    var blockItemContent = (ContentModels.EventDate)blockItem.Content;
+                    <div class="date">
+
+                        <p>@blockItemContent.Date.ToString("dd MM yyyy")</p>
+                        <h2>@blockItemContent.Headline</h2>
+                        <p>@blockItemContent.Description</p>
+                    </div>
+
+                }*@
+
+                
+        @Html.GetBlockListHtml(Model, "Dates")
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .date {
+        border: 1px solid red;
+    }
+</style>
